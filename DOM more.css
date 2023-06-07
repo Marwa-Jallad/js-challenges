@@ -1,0 +1,11 @@
+div {
+  background-color: blueviolet;
+  color: white;
+  width: 200px;
+  height: 30 px;
+  font-size: 20 px;
+  padding: 30px;
+  margin: 20 px;
+  text-align: center;
+  cursor: pointer;
+}
