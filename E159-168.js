@@ -7,3 +7,4 @@ let birthday = new Date("Oct 25, 82")
 console.log (birthday)
 let dateDiff = dateNow - birthday;
 console.log(dateDiff)
+console.log (date.now())
