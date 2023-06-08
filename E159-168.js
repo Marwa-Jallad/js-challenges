@@ -19,6 +19,8 @@ let hours = min/60;
 let days = hours/24;
 let mon = days/30;
 let years = mon/12;
+console.log(dateOne)
+console.log(birthDate)
 console.log(myBirthday);
 console.log(sec ,"Seconds");
 console.log(min,"Minutes");
@@ -29,10 +31,16 @@ console.log(years,"years")
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
 //////////////////////////////////////////////////
-
+let oldDate = new Date()
+oldDate.setTime(0);
+oldDate.setFullYear(1980)
+oldDate.setTime(1000)
+oldDate.setHours(0)
+console.log(oldDate);
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
 //////////////////////////////////////////////////
+
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
 //////////////////////////////////////////////////
