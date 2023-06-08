@@ -40,16 +40,52 @@ console.log(oldDate);
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
 //////////////////////////////////////////////////
+let monthes = ["Jan" , "Feb" , "March" , "April" , "May" , "June" , "July", "Augest" , "september","October" , "November" , "December"]
+let myDate = new Date()
+myDate.setDate(0);
+console.log(myDate);
+console.log(`Previous Month is ${monthes[myDate.getMonth()]} and last day Is ${myDate.getDate()}`)
+///////////////////////////////////////////////////
+console.log("#".repeat(40))
+//////////////////////////////////////////////////
+let dateOfbirth = new Date ("Jan 16 1989");
+let dateOfbirth1 = new Date ("89 ,01 ,16");
+let dateOfbirth2 = new Date ("1989-01-16T06:10:00Z");
+console.log(dateOfbirth);
+console.log(dateOfbirth1);
+console.log(dateOfbirth2);
+///////////////////////////////////////////////////
+console.log("#".repeat(40))
+///////////////////////////////////////////////////
+let t0 = performance.now()
+for ( i = 0 ; i<=9; i++){
+    console.log(i)
+}
+let t1 = performance.now()
+console.log(parseInt((t1-t0)/1000));
+///////////////////////////////////////////////////
+console.log("#".repeat(40))
+///////////////////////////////////////////////////
+function* gen(){
+    let index = 14;
+    let num = 140;
+    let sum = index + num
+    while(true){
+        yield sum;
+        sum += num += 200 ; 
+    }
+}
+let generator = gen();
 
-///////////////////////////////////////////////////
-console.log("#".repeat(40))
-//////////////////////////////////////////////////
-///////////////////////////////////////////////////
-console.log("#".repeat(40))
-//////////////////////////////////////////////////
-///////////////////////////////////////////////////
-console.log("#".repeat(40))
-//////////////////////////////////////////////////
+console.log(generator.next()); // {value: 14, done: false}
+console.log(generator.next()); // {value: 154, done: false}
+console.log(generator.next()); // {value: 494, done: false}
+console.log(generator.next()); // {value: 1034, done: false}
+console.log(generator.next()); // {value: 1774, done: false}
+console.log(generator.next()); // {value: 2714, done: false}
+console.log(generator.next()); // {value: 3854, done: false}
+console.log(generator.next()); // {value: 5194, done: false}
+console.log(generator.next()); // {value: 6734, done: false}
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
 //////////////////////////////////////////////////
