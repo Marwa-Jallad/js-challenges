@@ -88,7 +88,32 @@ console.log(generator.next()); // {value: 5194, done: false}
 console.log(generator.next()); // {value: 6734, done: false}
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
-//////////////////////////////////////////////////
+///////////////////////////////////////////////////
+function* genNumbers() {
+    yield* [1, 2, 2, 2, 3, 4, 5];
+}
+function* genLetters() {
+    yield* ["A", "B", "B", "B", "C", "D"];
+}
+
+function* genAll() { 
+    yield* genNumbers();
+    yield* genLetters();
+}
+let generator1 = genAll();
+
+  console.log(generator1.next()); // {value: 1, done: false}
+  console.log(generator1.next()); // {value: 2, done: false}
+  console.log(generator1.next()); // {value: 3, done: false}
+  console.log(generator1.next()); // {value: 4, done: false}
+  console.log(generator1.next()); // {value: 5, done: false}
+  console.log(generator1.next()); // {value: "A", done: false}
+  console.log(generator1.next()); // {value: "B", done: false}
+  console.log(generator1.next()); // {value: "C", done: false}
+  console.log(generator1.next()); // {value: "D", done: false}
 ///////////////////////////////////////////////////
 console.log("#".repeat(40))
 //////////////////////////////////////////////////
+import calc from "./modOne"
+import * as modOne from "./modTwo.js" 
+console.log(calc(modOne.numOne, modOne.numTwo, modOne.numThree));
