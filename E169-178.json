@@ -1,0 +1,11 @@
+{
+    "string" : "Marwa",
+    "number": "100",
+    "object" : {
+    "Eg" : "Hurghada",
+    "Jo" : "Amman"
+    },
+    "Array" : ["Html","CSS", "JS"] , 
+    "boolean" : true , 
+    "null" : null 
+}
