@@ -14,3 +14,17 @@ jsElement["userNmae"] = "Marwa" ;
 const jasonElementToServer = JSON.stringify (jsElement)
 console.log ( typeof jasonElementToServer);
 console.log (jasonElementToServer)
+
+function one (){
+    console.log("one");
+}
+function two(){
+    one()
+    console.log("two")
+}
+function three(){
+two()
+console.log()
+console.log("three")
+}
+three()
