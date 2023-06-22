@@ -28,3 +28,8 @@ console.log()
 console.log("three")
 }
 three()
+
+let myRequest = new XMLHttpRequest();
+myRequest.open ("GET","http://api.github.com/users/elzerowebschool/repos");
+myRequest.send()
+console.log(myRequest)
