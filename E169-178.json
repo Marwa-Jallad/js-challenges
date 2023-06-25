@@ -1,11 +1,28 @@
-{
-    "string" : "Marwa",
-    "number": "100",
-    "object" : {
-    "Eg" : "Hurghada",
-    "Jo" : "Amman"
+
+[
+    {
+"id" : 100,
+"name": "mohammad",
+"title": "Article 1"
     },
-    "Array" : ["Html","CSS", "JS"] , 
-    "boolean" : true , 
-    "null" : null 
-}
+    {
+        "id" : 101,
+        "name": "Ahmad",
+        "title": "Article 2"
+    },
+    {
+        "id" : 102,
+        "name": "Mahmmoud",
+        "title": "Article 3"
+    },
+    {
+        "id" : 103,
+        "name": "sara",
+        "title": "Article 4"
+    },
+    {
+        "id" : 104,
+        "name": "soad",
+        "title": "Article 5"
+    }
+]
