@@ -73,3 +73,11 @@ setTimeout(() => {
         }, 3000);
     }, 2000);
 }, 1000);
+
+
+
+let myRequest1 = new XMLHttpRequest();
+myRequest1.open("article.json");
+myRequest1.send();
+
+console.log(myRequest1)
